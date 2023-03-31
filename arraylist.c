@@ -38,6 +38,9 @@ void push(ArrayList * l, void * data, int i){
   l-> data = realloc(l->data, sizeof(void*)*l->capacity*2); 
   l->capacity=l->capacity*2;
 
+    for(int i=0; i< l->size; i++){
+      l->data[i+1]=l->data[i]; 
+    }
     
     
   }
@@ -53,7 +56,10 @@ void* pop(ArrayList * l, int i){
 }
 
 void* get(ArrayList * l, int i){
-  if(i>=l->size)return NULL; 
+  //if(i >= l->size)return NULL; 
+
+  //if(i<0)
+  return NULL;
 }
 
 int get_size(ArrayList * l){
