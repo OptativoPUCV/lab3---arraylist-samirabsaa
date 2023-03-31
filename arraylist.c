@@ -47,7 +47,7 @@ void push(ArrayList * l, void * data, int i){
 
     
     
-  }
+  }}
 
 }
 

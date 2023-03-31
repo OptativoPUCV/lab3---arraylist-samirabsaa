@@ -470,3 +470,15 @@ arraylist.c:52:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 e264cfe
+Fri 31 Mar 2023 12:36:13 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c:50:4: error: expected identifier or ‘(’ before ‘}’ token
+   50 |   }}
+      |    ^
+arraylist.c:52:1: error: expected identifier or ‘(’ before ‘}’ token
+   52 | }
+      | ^
+Compilation failed
+abd5262
