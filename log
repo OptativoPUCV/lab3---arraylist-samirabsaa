@@ -437,3 +437,9 @@ arraylist.c:44:16: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 fd3b8dd
+Fri 31 Mar 2023 12:31:41 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 20/70
+34f41f9
