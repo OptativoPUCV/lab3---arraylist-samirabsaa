@@ -52,10 +52,12 @@ void* pop(ArrayList * l, int i){
 
   for(int z=l->size; z>i; z--)
     {
-      //l->data
-      l->size--; 
+      l->data[z]=l->data[z-1]
+       
     }
- return NULL; 
+  l->data[i]= NULL; 
+  l->size--;
+ //return NULL; 
 
   
     
