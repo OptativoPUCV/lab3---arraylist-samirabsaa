@@ -22,14 +22,13 @@ ArrayList *createList(void) {
 
 void append(ArrayList * l, void * data){
 
-if(l==NULL){
-  
-}
-if(l->size < l->capacity){ 
+
+if(l->size != l->capacity){ 
+  l->data
   
 }
 if(l->size==l->capacity){
-l-> data = realloc(sizeof(data) l->capacity*2); 
+l-> data = realloc(data, l->capacity*2); 
   
 }
 
