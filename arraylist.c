@@ -13,8 +13,8 @@ typedef struct ArrayList {
 ArrayList *createList(void) {
   ArrayList *aux = (ArrayList *) malloc(sizeof(ArrayList)); 
   if(aux == NULL) exit(EXIT_FAILURE); 
-  aux ->data = (void *) malloc(sizeof(void) * aux->capacity); 
   aux-> capacity = 2; 
+  aux ->data = (void *) malloc(sizeof(void) * aux->capacity); 
   aux -> size = 0;
 
   return aux; 
