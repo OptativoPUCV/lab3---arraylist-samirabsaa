@@ -821,3 +821,28 @@ Fri 31 Mar 2023 07:43:05 PM UTC:
  tests:  6|3
 total_score: 30/70
 e7d9039
+Fri 31 Mar 2023 07:44:11 PM UTC: 
+ arraylist.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+test.c: In function ‘get’:
+test.c:411:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:434:1: error: expected declaration or statement at end of input
+  434 | }
+      | ^
+test.c:8:6: error: unused variable ‘msg’ [-Werror=unused-variable]
+    8 | char msg[300];
+      |      ^~~
+test.c:435: error: control reaches end of non-void function [-Werror=return-type]
+At top level:
+test.c:411:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+arraylist.c:80:5: error: ‘get_size’ defined but not used [-Werror=unused-function]
+   80 | int get_size(ArrayList * l){
+      |     ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9e42b98
