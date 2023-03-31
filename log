@@ -326,3 +326,27 @@ arraylist.c:47:5: error: ‘get_size’ defined but not used [-Werror=unused-fun
 cc1: all warnings being treated as errors
 Compilation failed
 a632a5e
+Fri 31 Mar 2023 12:06:06 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+test.c: In function ‘append’:
+test.c:411:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:434:1: error: expected declaration or statement at end of input
+  434 | }
+      | ^
+test.c:8:6: error: unused variable ‘msg’ [-Werror=unused-variable]
+    8 | char msg[300];
+      |      ^~~
+At top level:
+test.c:411:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+arraylist.c:47:5: error: ‘get_size’ defined but not used [-Werror=unused-function]
+   47 | int get_size(ArrayList * l){
+      |     ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+31da24d
