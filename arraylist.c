@@ -70,8 +70,8 @@ void* get(ArrayList * l, int i){
     return l->data[i];} 
   }*/
 
-  l->data = l->data[l->size];
-  //(return l->data[i];
+  //l->data = l->data[l->size];
+  (return l->data[i];
   
 }
 

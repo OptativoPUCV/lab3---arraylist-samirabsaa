@@ -620,3 +620,24 @@ arraylist.c:76:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 4bcd69b
+Fri 31 Mar 2023 04:18:20 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:74:4: error: expected expression before ‘return’
+   74 |   (return l->data[i];
+      |    ^~~~~~
+arraylist.c:74:22: error: expected ‘;’ before ‘}’ token
+   74 |   (return l->data[i];
+      |                      ^
+      |                      ;
+   75 | 
+   76 | }
+      | ~                     
+arraylist.c:76:1: error: control reaches end of non-void function [-Werror=return-type]
+   76 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1c487ff
