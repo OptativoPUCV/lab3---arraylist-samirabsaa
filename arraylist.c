@@ -28,9 +28,9 @@ if(l->size != l->capacity){
   l->size++; 
   
 }
-else(l->size == l->capacity){
+else(l->size == l->capacity)
 l-> data = realloc(data, l->capacity*2); 
-}
+
 
 void push(ArrayList * l, void * data, int i){
 
