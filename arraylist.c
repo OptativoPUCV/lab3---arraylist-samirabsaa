@@ -66,7 +66,7 @@ void* get(ArrayList * l, int i){
 
   if(i<0){
     for(int z=l->size; z>i; z--){
-    l->data[z]=l->data[z-1]; 
+    return l->data[i]; 
   } 
     //l->data[i] = l->data;
   }
