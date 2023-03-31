@@ -64,14 +64,15 @@ void* pop(ArrayList * l, int i){
 void* get(ArrayList * l, int i){
   
   if(i >= l->size)return NULL;
-  
-  if(i<0)
+  if(i<0)i = list->size+i;
+    
+  /*if(i<0)
   {
     for(int z=l->size; z>i; z--)
       return l->data[z];
   }
-
-  //l->data = l->data[l->size];
+  l->data = l->data[l->size];*/
+  
   return l->data[i];
 }
 
