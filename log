@@ -49,3 +49,14 @@ Fri 31 Mar 2023 11:30:44 AM UTC:
  tests:  0|6
 total_score: 0/70
 bfdcd55
+Fri 31 Mar 2023 11:33:20 AM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:50: error: ‘*aux.capacity’ may be used uninitialized [-Werror=maybe-uninitialized]
+   16 |   aux ->data = (void *) malloc(sizeof(void) * aux->capacity);
+      |                                               ~~~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9614375
