@@ -69,7 +69,7 @@ void* get(ArrayList * l, int i){
   {
     for(int z=l->size; z>i; z--)
     {
-      return l->data[z+1];
+      return l->data[z];
     }
 
   //l->data = l->data[l->size];
