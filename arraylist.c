@@ -29,7 +29,7 @@ if(l->size < l->capacity){
   
 }
 if(l->size==l->capacity){
-l-> data = realloc((data), l->capacity*2); 
+l-> data = realloc(sizeof(data) l->capacity*2); 
   
 }
 

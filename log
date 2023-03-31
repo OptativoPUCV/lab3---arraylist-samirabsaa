@@ -90,3 +90,49 @@ arraylist.c:48:5: error: ‘get_size’ defined but not used [-Werror=unused-fun
 cc1: all warnings being treated as errors
 Compilation failed
 c50301c
+Fri 31 Mar 2023 11:52:16 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:32:32: error: expected ‘)’ before ‘l’
+   32 | l-> data = realloc(sizeof(data) l->capacity*2);
+      |                   ~            ^~
+      |                                )
+arraylist.c:32:20: error: passing argument 1 of ‘realloc’ makes pointer from integer without a cast [-Werror=int-conversion]
+   32 | l-> data = realloc(sizeof(data) l->capacity*2);
+      |                    ^~~~~~~~~~~~
+      |                    |
+      |                    long unsigned int
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:551:29: note: expected ‘void *’ but argument is of type ‘long unsigned int’
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |                       ~~~~~~^~~~~
+In file included from test.c:5:
+arraylist.c:32:12: error: too few arguments to function ‘realloc’
+   32 | l-> data = realloc(sizeof(data) l->capacity*2);
+      |            ^~~~~~~
+In file included from test.c:2:
+/nix/store/4pqv2mwdn88h7xvsm7a5zplrd8sxzvw0-glibc-2.35-163-dev/include/stdlib.h:551:14: note: declared here
+  551 | extern void *realloc (void *__ptr, size_t __size)
+      |              ^~~~~~~
+test.c:411:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:434:1: error: expected declaration or statement at end of input
+  434 | }
+      | ^
+test.c:8:6: error: unused variable ‘msg’ [-Werror=unused-variable]
+    8 | char msg[300];
+      |      ^~~
+At top level:
+test.c:411:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+arraylist.c:48:5: error: ‘get_size’ defined but not used [-Werror=unused-function]
+   48 | int get_size(ArrayList * l){
+      |     ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+baec80d
