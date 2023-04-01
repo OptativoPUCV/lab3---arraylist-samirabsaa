@@ -1088,3 +1088,20 @@ arraylist.c:64:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 15130cd
+Sat 01 Apr 2023 12:34:23 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:61:8: error: variable or field ‘aux’ declared void
+   61 |   void aux = l->data[l->size-1];
+      |        ^~~
+arraylist.c:61:14: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   61 |   void aux = l->data[l->size-1];
+      |              ^
+arraylist.c:64:10: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   64 |   return aux;
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+b4dee56
