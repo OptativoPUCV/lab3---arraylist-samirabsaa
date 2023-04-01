@@ -1074,3 +1074,17 @@ Sat 01 Apr 2023 12:29:59 PM UTC:
  tests:  9|1
 total_score: 50/70
 8ce5e2f
+Sat 01 Apr 2023 12:34:13 PM UTC: 
+ arraylist.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:61:13: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   61 |   int aux = l->data[l->size-1];
+      |             ^
+arraylist.c:64:10: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   64 |   return aux;
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+15130cd
