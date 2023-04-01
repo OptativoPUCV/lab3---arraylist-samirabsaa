@@ -1051,3 +1051,14 @@ Sat 01 Apr 2023 12:29:12 PM UTC:
  tests:  8|2
 total_score: 40/70
 5d3f53e
+Sat 01 Apr 2023 12:29:31 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:90:11: error: assignment to ‘void **’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   90 |   l->data = 2;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+cbd7401
