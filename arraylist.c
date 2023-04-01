@@ -48,23 +48,28 @@ void push(ArrayList * l, void * data, int i){
 }
 
 void* pop(ArrayList * l, int i){
-  l->data[i]= NULL; 
-  //void aux;
+
+  if(i>=l->size)return NULL;
+  if(i<0){
+    get(l,i);
+    l->data[i] = NULL; 
+  }
+  for(int z=l->size+1; z>l->size; z++)
+    l->data[z-1]=l->data[z]; 
+
+  
+  //l->data[i]= NULL; 
   /*for(int z=l->size; z>i; z--)
     {
       l->data[z]=l->data[z-1];
        
     }
+   l->size--;
   
-  //l->size--;
-  
-  void aux = l->data[l->size-1];
-  l->size--;*/
+  */
 
-  
-  
-  //return aux;
- return NULL;   
+  l->size--; 
+  return l->data[i];   
 }
 
 void* get(ArrayList * l, int i){
@@ -87,7 +92,7 @@ int get_size(ArrayList * l){
 
 //remove elements
 void clean(ArrayList * l){
-    free(l->data); 
+  free(l->data); 
   l->data = NULL;
   l->size= 0; 
   l->capacity = 2;
