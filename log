@@ -1062,3 +1062,9 @@ arraylist.c:90:11: error: assignment to ‘void **’ from ‘int’ makes point
 cc1: all warnings being treated as errors
 Compilation failed
 cbd7401
+Sat 01 Apr 2023 12:29:47 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|2
+total_score: 40/70
+7c50322
