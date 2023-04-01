@@ -1174,3 +1174,9 @@ arraylist.c:57:21: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no me
       |                     ^~
 Compilation failed
 327bdf5
+Sat 01 Apr 2023 03:08:29 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|1
+total_score: 50/70
+9c11594
