@@ -1204,3 +1204,16 @@ Sat 01 Apr 2023 03:11:19 PM UTC:
  tests:  9|1
 total_score: 50/70
 d1fe1b6
+Sat 01 Apr 2023 03:12:18 PM UTC: 
+ arraylist.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:54:13: error: expected ‘;’ before ‘l’
+   54 |     get(l,i)
+      |             ^
+      |             ;
+   55 |     l->data[i] = NULL;
+      |     ~        
+Compilation failed
+776abb1
