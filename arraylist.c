@@ -51,11 +51,11 @@ void push(ArrayList * l, void * data, int i){
 void* pop(ArrayList * l, int i){
   //l->data[i]= NULL; 
   void aux;
-  /*for(int z=l->size; z>i; z--)
+  for(int z=l->size; z>i; z--)
     {
       l->data[z]=l->data[z-1];
        
-    }*/
+    }
   
   //l->size--;
 
