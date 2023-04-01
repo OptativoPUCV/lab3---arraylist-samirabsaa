@@ -56,8 +56,8 @@ void* pop(ArrayList * l, int i){
   else{
   for(int z=l->size+1; z>l->size; z--)
     l->data[z-1]=l->data[z]; 
-  }
-  l->size--; 
+  l->size--;}
+   
   return l->data[i];   
 }
 
