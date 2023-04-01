@@ -56,13 +56,15 @@ void* pop(ArrayList * l, int i){
        
     }
   
-  //l->size--;*/
-
-  void aux = l->data[l->size-1];
-  l->size--;
+  //l->size--;
   
-  return aux;
- //return NULL;   
+  void aux = l->data[l->size-1];
+  l->size--;*/
+
+  
+  
+  //return aux;
+ return NULL;   
 }
 
 void* get(ArrayList * l, int i){

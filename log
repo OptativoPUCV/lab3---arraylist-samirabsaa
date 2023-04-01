@@ -1105,3 +1105,9 @@ arraylist.c:64:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 b4dee56
+Sat 01 Apr 2023 12:35:00 PM UTC: 
+ arraylist.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+ tests:  9|1
+total_score: 50/70
+e59cce1
