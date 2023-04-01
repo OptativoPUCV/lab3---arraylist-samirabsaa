@@ -1164,3 +1164,13 @@ Sat 01 Apr 2023 03:07:52 PM UTC:
  tests:  9|1
 total_score: 50/70
 b5b8e2f
+Sat 01 Apr 2023 03:08:19 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:57:21: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘i’
+   57 |   for(int z=i+1; z>l->i; z--)
+      |                     ^~
+Compilation failed
+327bdf5
