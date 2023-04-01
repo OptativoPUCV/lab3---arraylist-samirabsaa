@@ -55,11 +55,11 @@ void* pop(ArrayList * l, int i){
     l->data[l->size] = NULL; 
   }
   else{
-  for(int z=l->size+1; z<l->size; z++)
+  for(int z=i+1; z<i; z++)
     l->data[z-1]=l->data[z]; 
   }
    l->size--;
-  return l->data[i];   
+  return l->data[l->size];   
 }
 
 void* get(ArrayList * l, int i){
